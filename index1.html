@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Haven - Online Book Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Header / Navigation ===== -->
+  <header>
+    <div class="logo">📚 Book Haven</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Books</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero">
+    <h1>Welcome to Book Haven</h1>
+    <p>Your one-stop shop for all your favorite books!</p>
+    <a href="#books" class="btn">Browse Books</a>
+  </section>
+
+  <!-- ===== Books Section ===== -->
+  <section id="books" class="books-section">
+    <h2>Featured Books</h2>
+    <div class="book-container">
+
+      <div class="book-card">
+        <img src="https://picsum.photos/200/300?random=1" alt="Book 1">
+        <h3>The Great Adventure</h3>
+        <p>By John Smith</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="book-card">
+        <img src="https://picsum.photos/200/300?random=2" alt="Book 2">
+        <h3>Learning HTML & CSS</h3>
+        <p>By Jane Doe</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="book-card">
+        <img src="https://picsum.photos/200/300?random=3" alt="Book 3">
+        <h3>Mystery of the Night</h3>
+        <p>By Alex Johnson</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="book-card">
+        <img src="https://picsum.photos/200/300?random=4" alt="Book 4">
+        <h3>World of Science</h3>
+        <p>By Dr. Albert</p>
+        <button>Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>&copy; 2025 Book Haven | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #4a148c;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffeb3b;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://picsum.photos/1200/400?blur=2') center/cover no-repeat;
+  text-align: center;
+  color: white;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #ffeb3b;
+  color: #4a148c;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #fdd835;
+}
+
+/* Books Section */
+.books-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.books-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.book-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.book-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.book-card h3 {
+  margin-bottom: 5px;
+  color: #4a148c;
+}
+
+.book-card p {
+  margin-bottom: 15px;
+}
+
+.book-card button {
+  background: #4a148c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.book-card button:hover {
+  background: #6a1b9a;
+}
+
+/* Footer */
+footer {
+  background: #4a148c;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
